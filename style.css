@@ -363,6 +363,58 @@ p {
     margin-top: 3rem;
 }
 
+/* Automations Section Layout */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(60, 80, 180, 0.08);
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 32px rgba(60, 80, 180, 0.16);
+}
+
+.automation-icon {
+    background: linear-gradient(135deg, #4f46e5 0%, #38bdf8 100%);
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.automation-icon svg {
+    width: 32px;
+    height: 32px;
+    color: #fff;
+}
+
+.card h3 {
+    color: #1e40af;
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.card p {
+    color: #374151;
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+
 /* Results Section */
 .results-subtitle {
     text-align: center;
